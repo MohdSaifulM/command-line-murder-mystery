@@ -1,0 +1,16 @@
+cd mystery
+grep "CLUE" crimescene 
+grep "Annabel" people  
+cd streets
+head -n 40 Hart_Place | tail -n 1
+head -n 179 Buckingham_Place | tail -n 1
+cd .. 
+cd interviews
+cat interview-47246024
+cat interview-699607
+cd ..
+grep -A5 "License Plate L337..9" vehicles | grep -C3 "Make: Honda" | grep -C3 "Color: Blue" | grep -C4 "Height: 6"
+cd memberships
+grep -r "Joe Germuska"
+grep -r "Jeremy Bowers"
+grep -r "Jacqui Maher"
